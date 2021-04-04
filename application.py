@@ -54,7 +54,7 @@ def render(x):
     global weightAndBias
     global learning
 
-    formular = f"[학습중{learner.progress}]" if learning else ""
+    formular = f"[학습중{learner.progress}] " if learning else ""
     if weightAndBias is not None:
         formular += f"y = { weightAndBias[0] } * x + { weightAndBias[1] }"
     else:
