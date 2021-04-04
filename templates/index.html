@@ -34,8 +34,13 @@
         <br>
         <br>
         <form action="{{ url_for('predict) }}" method="post">
+            <input name="x" type="number" placeholder="x값 입력"/>
+            <br><br>
             <input type="submit" value="예측하기"/>
         </form>
+        <br><br>
+        <h2>학습된 수식</h2>
+        {{ formular }}
         <br><br>
         <h2>예측된 y값</h2>
         {{ predicted }}
