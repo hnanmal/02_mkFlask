@@ -9,9 +9,9 @@
         </style>
         <script>
             fuction sendDataToLearn () {
-                var xhr = new XMLHttpRequest():
-                xhr.open("POST", "/learn", true):
-                xhr.setRequestHeader('Content-Type', 'appliction/json'):
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/learn", true);
+                xhr.setRequestHeader('Content-Type', 'appliction/json');
                 xhr.send(JSON.stringify({
                     xList: document.getElementById("xListInput").value,
                     yList: document.getElementById("yListInput").value,
@@ -30,7 +30,7 @@
         <br>
         <input id="epochs" placeholder="횟수" type="number" value="10000"/>
         <br><br>
-        <button onclick="sendDataToLearn():">학습하기</button>
+        <button onclick="sendDataToLearn();">학습하기</button>
         <br>
         <br>
         <form action="{{ url_for('predict') }}" method="post">
