@@ -44,7 +44,8 @@ def learn(xList, yList, epochs):
         progress = f": {epoch_count}/{epochs}"
         if epoch_count % 100 == 0:
             print(
-                f"{epoch_count}:: q:{linear_model.Weight.numpy()}" + f" b:{linear_model.Bias.numpy()} Loss: {real_loss.numpy()} "
+                f"{epoch_count}:: \:{linear_model.Weight.numpy()}" + 
+                f" b:{linear_model.Bias.numpy()} Loss: {real_loss.numpy()} "
             )
 
     progress = ""
